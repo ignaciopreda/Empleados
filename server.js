@@ -30,7 +30,7 @@ app.get('/api/employees', function(req, res){
 
 //filtro por id - minuto 21:46
 app.get('/api/employees/:id', function(req, res){
-  Employee.findOne({_id:req.params.id}, function(err, employees){
+  Employee.findOne({_id:req.params.id}, function(err, employee){
     if(err)
       res.send(err);
     res.json(employee);
@@ -48,7 +48,7 @@ app.post('/api/employees', function(req, res){
 
 //minuto 29:15
 app.delete('/api/employees/:id', function(req, res){
-  Employee.findOneAndRemove({_id:req.params.id}, function(err, employees){
+  Employee.findOneAndRemove({_id:req.params.id}, function(err, employee){
     if(err)
       res.send(err);
     res.json(employee);

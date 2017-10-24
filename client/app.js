@@ -10,15 +10,15 @@ myApp.config(function($routeProvider){
       templateUrl:'templates/list.html',
       controller:'empController'
     })
-    .when('/employess/create',{
+    .when('/employees/create',{
       templateUrl:'templates/add.html',
       controller:'empController'
     })
-    .when('/employess/:id/edit',{
+    .when('/employees/:id/edit',{
       templateUrl:'templates/edit.html',
       controller:'empController'
     })
-    .when('/employess/:id/show',{
+    .when('/employees/:id/show',{
       templateUrl:'templates/show.html',
       controller:'empController'
     });
