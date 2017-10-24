@@ -12,4 +12,12 @@ myApp.controller('empController', function($scope,$route,$routeParams,$http){
       $scope.employee = response.data;
     });
   };
+
+  $scope.editEmployee = function(){
+    var id = $routeParams.id;
+    $http.get('/api/employees/' + id).then(function(response){
+      $scope.employee = response.data;
+    });
+  };
+
 });

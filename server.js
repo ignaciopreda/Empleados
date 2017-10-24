@@ -65,7 +65,7 @@ app.put('/api/employees/:id', function(req, res){
     contact: req.body.contact,
     salary: req.body.salary
   }
-  Employee.findOneAndUpdate({_id:req.params.id}, query, function(err, employees){
+  Employee.findOneAndUpdate({_id:req.params.id}, query, function(err, employee){
     if(err)
       res.send(err);
     res.json(employee);

@@ -1,0 +1,43 @@
+<div class="panel panel-default" ng-init="editEmployee()">
+  <div class="panel-heading">
+    <p class="panel-title"> Edit Employee </p>
+  </div>
+  <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <div class="form-inline" style="display: none;">
+          <label> ID: </label>
+          <input class="form-control" type="text" name="txtID" value="{{employee._id}}">
+        </div>
+        <div class="form-inline">
+          <label> Name: </label>
+          <input class="form-control" type="text" name="txtName" value="{{employee.name}}">
+        </div>
+        <div class="form-inline">
+          <label> Department: </label>
+          <input class="form-control" type="text" name="txtDepartment" value="{{employee.dept}}">
+        </div>
+        <div class="form-inline">
+          <label> Location: </label>
+          <input class="form-control" type="text" name="txtLocation" value="{{employee.area}}">
+        </div>
+        <div class="form-inline">
+          <label> Status: </label>
+          <input class="form-control" type="text" name="txtStatus" value="{{employee.status}}">
+        </div>
+        <div class="form-inline">
+          <label> Contact: </label>
+          <input class="form-control" type="text" name="txtContact" value="{{employee.contact}}">
+        </div>
+        <div class="form-inline">
+          <label> Salary: </label>
+          <input class="form-control" type="text" name="txtSalary" value="{{employee.salary}}">
+        </div>
+      </div>
+      <div class="form-inline">
+        <button id="btnGuardar" type="button" class="btn btn-success"> Guardar </button>
+        <a href="#/employees" class="btn btn-danger"> Cancel </a>
+      </div>
+    </form>
+  </div>
+</div>
