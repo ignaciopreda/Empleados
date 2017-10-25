@@ -20,7 +20,7 @@
             <td>
               <a href="#/employees/{{employee._id}}/show" class="btn btn-info btn-xs"> Show </a>
               <a href="#/employees/{{employee._id}}/edit" class="btn btn-success btn-xs"> Edit </a>
-              <a click="" class="btn btn-danger btn-xs"> Delete </a>
+              <a ng-click="deleteEmployee(employee._id)" class="btn btn-danger btn-xs"> Delete </a>
             </td>
           </tr>
         </tbody>
