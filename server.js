@@ -28,7 +28,6 @@ app.get('/api/employees', function(req, res){
   });
 });
 
-//filtro por id - minuto 21:46
 app.get('/api/employees/:id', function(req, res){
   Employee.findOne({_id:req.params.id}, function(err, employee){
     if(err)
@@ -37,7 +36,6 @@ app.get('/api/employees/:id', function(req, res){
   });
 });
 
-//minuto 25:10
 app.post('/api/employees', function(req, res){
   Employee.create( req.body, function(err, employees){
     if(err)
@@ -46,7 +44,6 @@ app.post('/api/employees', function(req, res){
   });
 });
 
-//minuto 29:15
 app.delete('/api/employees/:id', function(req, res){
   Employee.findOneAndRemove({_id:req.params.id}, function(err, employee){
     if(err)
@@ -55,7 +52,6 @@ app.delete('/api/employees/:id', function(req, res){
   });
 });
 
-//minuto 31:00
 app.put('/api/employees/:id', function(req, res){
   var query = {
     name: req.body.name,

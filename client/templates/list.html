@@ -1,6 +1,6 @@
 <div class="panel panel-default" ng-init="getEmployees()"> <!--ng-init="getEmployess" hace referencia al de controller.js-->
   <div clss=panel-heading>
-    <p class="panel-title well well-sm">Employees List</p>
+    <p class="panel-title well well-sm"><span style="color:#5bc0de;" class="glyphicon glyphicon-list"></span> Employees List</p>
   </div>
   <div class="panel-body">
     <table class="table table-striped">
@@ -18,9 +18,9 @@
             <td>{{ employee.dept }}</td>
             <td>{{ employee.area }}</td>
             <td>
-              <a href="#/employees/{{employee._id}}/show" class="btn btn-info btn-xs"> Show </a>
-              <a href="#/employees/{{employee._id}}/edit" class="btn btn-success btn-xs"> Edit </a>
-              <a ng-click="deleteEmployee(employee._id)" class="btn btn-danger btn-xs"> Delete </a>
+              <a href="#/employees/{{employee._id}}/show" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-search"></span> Show </a>
+              <a href="#/employees/{{employee._id}}/edit" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-pencil"></span> Edit </a>
+              <a ng-click="deleteEmployee(employee._id)" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span> Delete </a>
             </td>
           </tr>
         </tbody>

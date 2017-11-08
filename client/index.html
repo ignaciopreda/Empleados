@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> My MEAN Stack app </title>
+    <title> CRUD Employee </title>
     <!-- <link rel="stylesheet" type="text/css" href="client/CSS/bootstrap.min.css" media="screen" /> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+  <h3 class="text-muted" style="text-align:center;">Simple MEAN web application using CRUD operation</h3>
+  </br>
     <div class="container">
       <div class="row">
         <div class="header clearfix">
           <nav>
-            <ul class="nav nav-pills pull-right">
-              <li role="presentation" class="active"><a href="#/employees">Employee List</a></li>
-              <li role="presentation"><a href="#/employees/create">Add New Employee</a></li>
+            <ul class="nav nav-pills pull-left">
+              <li role="presentation" class="active"><a href="#/employees"><span class="glyphicon glyphicon-th-list"></span> Employee List</a></li>
+              <li role="presentation"><a href="#/employees/create"><span class="glyphicon glyphicon-plus"></span> Add New Employee</a></li>
             </ul>
           </nav>
-          <h3 class="text-muted">Simple MEAN web application using CRUD operation</h3>
         </div>
+        </br>
         <div ng-view></div>
         <footer class="footer well well-sm">
-          <p> 2017 - Employee WebApi xD </p>
+          <p> 2017 - Ignacio Preda </p>
         </footer>
-
       </div>
     </div>
 
